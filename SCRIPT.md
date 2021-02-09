@@ -5,6 +5,7 @@ Witch: What business do you have here, traveler?
     Player: Who are you?
     
 		Witch: I am <Alias.ShortName=CureWitch> of the Beldama Wyrd, I have traveled here from High Rock in order to try and save Solstheim’s fragile ecosystem.
+		
 			Player: I heard there were witches here that could cure my lycanthropy.
 			
 				Witch: There was once. Not anymore.
