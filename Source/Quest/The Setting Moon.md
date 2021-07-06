@@ -1,6 +1,10 @@
-Canis Hysteria will add a new lore book to the world called "The Rite of the Wolf-Giver". It will explain that wild lycanthropy gained from Canis Hysteria can be cured with difficulty but lycanthropy attained via a curse can only be broken by the ones who relayed the curse. The book will go on to inform the Player about a mysterious ritual that Glenmoril Wyrd Covens would perform to cure "wild lycanthropy". It will mention a coven on Solstheim that was infamous for providing the cure during the Bloodmoon prophecies.
+Canis Hysteria will add a new lore book to the world called "The Rite of the Wolf-Giver". It will explain to the Player that there are two main strains of the lycanthrope disease: Sanies Lupinus and Canis Hysteria. Canis Hysteria (or "wild lycanthropy") is contracted when someone comes in too close of contact with a lycanthrope whereas Sanies Lupinus can only be conferred via magical means, such as a curse. It is also mentioned that the difference between these two strains is not well understood by most and they are often misattributed by one another's name.
 
-It can be found in leveled lists as well as a few static locations:
+Both diseases have a three-day incubation period that will end with the infected person becoming a full lycanthrope (although if the blood of a lycanthrope is conconsumed directly the transformation will be immediate). Curing either strain is as easy as drinking a "Cure Disease" potion during the incubation period, but after the infected person becomes a full lycanthrope curing the condition becomes substinally harder.
+
+Canis Hysteria can be cured by undergoing an ancient rite performed by a witch of the Glenmoril Wyrd. The rite is shrouded in msytery, but it is said that a coven offered the cure to denezins of Solstheim during the Bloodmoon Prophecies. On the other hand, the only known cure for Sanies Lupinus is to reverse the magical effects from the original source.
+
+The Rite of the Wolf-Giver can be found in leveled lists as well as a few static locations: 
 
 **Ill Met by Moonlight Locations**
 
