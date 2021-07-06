@@ -19,7 +19,7 @@ Upon traveling to the Altar of Thrond you will find that the Wyrd Witches have s
 
 The note will detail the process of performing the Rite of the Wolf-Giver.
 
-The first thing that the play will need to do is obtain one Canis Root and one Taproot. Once they get those ingredients they will need to remove the heart from the Nord sacrifice (already present) on the Altar of Thrond at the exterior of the cave.
+The first thing that the play will need to do is obtain one [Canis Root](https://en.uesp.net/wiki/Skyrim:Canis_Root) and one [Taproot](https://en.uesp.net/wiki/Skyrim:Taproot). Once they get those ingredients they will need to remove the heart from the [Sacrifice](https://en.uesp.net/wiki/Skyrim:Sacrifice) (already present) on the Altar of Thrond at the exterior of the cave.
 
 They will then need to take the ingredients and heart to a cauldron inside the cave. The Player will activate the cauldorn and the ingredients and heart will be removed and replaced with a Heart of the Wolf.
 
