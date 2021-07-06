@@ -26,3 +26,5 @@ They will then need to take the ingredients and heart to a cauldron inside the c
 Then the Player will need to go back to the sacrifice and place the Heart of the Wolf into their inventory. Upon doing that a wolf spirit will spawn next to the Player and they will need to fight it off. 
 
 One the spirit has been defeated the Player's lycanthropy will be cured.
+
+If the Player accepts Companion lycanthropy while this quest is active, they will fail it.
