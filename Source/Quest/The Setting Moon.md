@@ -1,4 +1,4 @@
-Canis Hysteria will add a new lore book to the world called "The Rite of the Wolf-Giver". It will inform the Player about a mysterious ritual that Glenmoril Wyrd Covens would perform to cure lycanthropy. It will mention a coven on Solstheim that was infamous for providing the cure during the Bloodmoon prophecies.
+Canis Hysteria will add a new lore book to the world called "The Rite of the Wolf-Giver". It will explain that lycanthropy gained from Canis Hysteria can be cured with difficulty but lycanthropy attained via a curse can only be broken by the ones who relayed the curse. The book will go on to inform the Player about a mysterious ritual that Glenmoril Wyrd Covens would perform to cure Canis Hysteria. It will mention a coven on Solstheim that was infamous for providing the cure during the Bloodmoon prophecies.
 
 It can be found in leveled lists as well as a few static locations:
 
