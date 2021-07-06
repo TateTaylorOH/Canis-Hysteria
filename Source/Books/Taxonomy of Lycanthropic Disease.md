@@ -12,7 +12,9 @@ Sanies Lupinus has become the most common term for werewolf disease, but it is r
 
 The two variants behave very similarly. Both have a three-day incubation period (assuming the infected did not injest lycanthrope blood directly), both have the infected transform into a beast, and both leave the infected in a terrible state of bloodlust. It has been hypothesized that those suffering from Canies Lupinus have greater control of their inner beast, but such claims have never been substainiated.
 
-Where the two variants are at least alike concerns curing the afflicition. While both diseases can be cured by conventional means during the incubation period, it becomes much harder after the infected has become a full lycanthrope. While cures are rare, it has been said that those infected in Canis Hysteria have been completely cured by undergoing certain magical rites. The most well-known of these rites is that of the "Rite of the Wolf-Giver." However, much about the rite is still shrouded in mystery. During Hiricne's Great Hunt of Solstheim in the Third Era, it was well-known that a group of Glenmoril Witches would often offer to preform this rite at the ancient Altar of Thrond to those who sought them out.
+Where the two variants are at least alike concerns curing the afflicition. While both diseases can be cured by conventional means during the incubation period, it becomes much harder after the infected has become a full lycanthrope. 
+
+While cures are rare, it has been said that those infected in Canis Hysteria have been completely cured by undergoing certain magical rites. The most well-known of these rites is that of the "Rite of the Wolf-Giver." However, much about the rite is still shrouded in mystery. During Hiricne's Great Hunt of Solstheim in the Third Era, it was well-known that a group of Glenmoril Witches would often offer to preform this rite at the ancient Altar of Thrond to those who sought them out.
 
 In comparison, Sanies Lupinus has no known cure beyond reversing the magical effects from the original source.
 
