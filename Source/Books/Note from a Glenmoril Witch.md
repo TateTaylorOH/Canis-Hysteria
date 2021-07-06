@@ -10,6 +10,6 @@ Place the sacrifice's heart into a cauldron alongside the taproot and canis root
 Replace the enchanted heart back into the empty chest of your sacrifice. If all went well, the sacrifice will rise and transform into a beast. 
 The one who sought you out will need to dispatch the beast by themself if they want their lycantrhopy cured. Do not intervene!
 
-If you follow these simple steps it will ensure that you will be able to sucessfully provide the lycanthropic cure to all who require it.
+If you follow these simple steps it will ensure that you will be able to sucessfully provide the beast blood cure to all who require it.
 
 Agnes
