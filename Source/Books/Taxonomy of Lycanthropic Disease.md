@@ -1,8 +1,8 @@
 ### Taxonomy of Lycanthropic Disease
 
-##### by
+A study on the dicotomy between Sanies Lupinus and Canis Hysteria.
 
-#### Enim Datorem, Imperial Scholar 
+#### by Enim Datorem, Imperial Scholar 
 
 It is well known that there are a multitude of different strains of lycanthropic disease. There are werebears, wereboars, werelions, and even weresharks; however, the most widespread and widely known variant of lycanthropy is the werewolf. While this study will be applicible to all strains of lycanthropic disease, we will be looking especially at the werewolf as our primary case study.
 
