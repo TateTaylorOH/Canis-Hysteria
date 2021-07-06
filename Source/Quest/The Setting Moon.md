@@ -2,7 +2,7 @@ Canis Hysteria will add a new lore book to the world called "The Rite of the Wol
 
 Both diseases have a three-day incubation period that will end with the infected person becoming a full lycanthrope (although if the blood of a lycanthrope is conconsumed directly the transformation will be immediate). Curing either strain is as easy as drinking a "Cure Disease" potion during the incubation period, but after the infected person becomes a full lycanthrope curing the condition becomes substinally harder.
 
-Canis Hysteria can be cured by undergoing an ancient rite performed by a witch of the Glenmoril Wyrd. The rite is shrouded in msytery, but it is said that a coven offered the cure to denezins of Solstheim during the Bloodmoon Prophecies. On the other hand, the only known cure for Sanies Lupinus is to reverse the magical effects from the original source.
+Canis Hysteria can be cured by undergoing an ancient rite performed by a witch of the Glenmoril Wyrd. The rite is shrouded in mystery, but it is said that a coven offered the cure to denezins of Solstheim during the Bloodmoon Prophecies. On the other hand, the only known cure for Sanies Lupinus is to reverse the magical effects from the original source.
 
 The Rite of the Wolf-Giver can be found in leveled lists as well as a few static locations: 
 
