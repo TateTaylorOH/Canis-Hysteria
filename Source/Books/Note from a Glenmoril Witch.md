@@ -1,10 +1,15 @@
 Dearest Sisters,
 
-The Coven wil remember your dedication and service. We realize Solstheim is an inhospitable place, but we go where we are needed. Anyone seeking the cure must perform the Rite of the Wolf Giver, of course. But I do understand the sensitive nature of the ritual, and realize it may not be possible to perform it again and again, if the Lord Hircine claims more than one soul.
+The Coven wil remember your dedication and service. We realize Solstheim is an inhospitable place, but we go where we are needed. Anyone seeking the cure must perform the Rite of the Wolf Giver, of course.
 
-So, I have prepared a Scroll of the Wolf Ender. The Daedric lettering on that scroll contains all the power of the ritual itself. I have taken great pains to prepare the parchment, and it will work as well as the Rite of the Wolf Giver. But heed these words! I do not wish the scroll to be used unless absolutely necessary! It was not easily created, and it is the wish of the Coven that it be saved for future use if possible.
+I have prepared the following insstructions to preform this sacred rite. In the event that one of you may fall, I hope that this letter will aid the others in continuing our good work.
 
-The scroll has already been hidden in the gloomy cave that will serve as your hovel for the duration of your stay on Solstheim. It is inside the hollowed-out icicle that hangs from the cave's ceiling. You'll need to use your raven form -- or a potion of levitation -- to reach it.
+Gather taproot from the corpse from a spriggan and a piece of canis root from around the island.
+Find a fresh sacrifice and bring them to your altar, kill them and take their heart.
+Place the sacrifice's heart into a cauldron alongside the taproot and canis root. Mix the ingredients together and the heart will be imbued with the essence of the wolf.
+Replace the enchanted heart back into the empty chest of your sacrifice. If all went well, the sacrifice will rise and transform into a beast. 
+The one who sought you out will need to dispatch the beast by themself if they want their lycantrhopy cured. Do not intervene!
 
+If you follow these simple steps it will ensure that you will be able to sucessfully provide the lycanthropic cure to all who require it.
 
 Agnes
