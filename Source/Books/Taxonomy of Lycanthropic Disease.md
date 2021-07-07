@@ -1,19 +1,19 @@
 `[pagebreak]`\
-`<p align="center">`
-
-
+`<p align="center">`\
+\
+\
 Taxonomy of Lycanthropic Disease\
-A study on the dichotomy between Sanies Lupinus and Canis Hysteria.
-
-
-  
+A study on the dichotomy between Sanies Lupinus and Canis Hysteria.\
+\
+\
+\
 by\
 Marcus Alvinus\
 Imperial Scholar\
-`</p>`
-
-
-
+`</p>`\
+\
+\
+\
 `[pagebreak]`\
 `<p align="left">`\
 `<img src='img://Textures/Interface/Books/Illuminated_Letters/I_letter.png'>`t is well known that there are many strains of lycanthropic disease (see Karessen, On Lycanthropy). This discussion will center on the werewolf, the most widespread and widely-known lycanthrope, though it will be applicable to all strains of lycanthropic diseases. Due to several high-profile cases in the late Third and early Fourth Eras and a series of studies by renowned healers, Sanies Lupinus is well-known and commonly believed to be responsible for all cases of lycanthropy. In reality, however, Sanies Lupinus is not the only variant that can create a werewolf. There are two main variants of the disease: Sanies Lupinus and the lesser known Canis Hysteria. Each has several strains, such as "Ursus Hysteria" and "Sanies Ursinus" , which turn the infected into werebears; "Felis Hysteria" and "Sanies Felinus" do the same for werelions. The variants are often described interchangeably, but there is a marked difference between the two. Sanies Lupinus stems from a spell or curse, and spreads only by blood. Canis Hysteria, on the other hand, is a true disease, and can be spread by any direct contact with lycanthropes.
