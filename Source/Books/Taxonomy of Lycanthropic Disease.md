@@ -1,4 +1,4 @@
-**Taxonomy of Lycanthropic Disease**
+**Taxonomy of Lycanthropic Disease**\
 A study on the dichotomy between Sanies Lupinus and Canis Hysteria.
 
 by Marcus Alvinus, Imperial Scholar
