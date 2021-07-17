@@ -1,24 +1,114 @@
 ;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
-;NEXT FRAGMENT INDEX 16
+;NEXT FRAGMENT INDEX 21
 Scriptname QF_DES_CureQuest_0603D42C Extends Quest Hidden
-
-;BEGIN ALIAS PROPERTY Sacrifice
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Sacrifice Auto
-;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY Cauldron
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_Cauldron Auto
 ;END ALIAS PROPERTY
 
+;BEGIN ALIAS PROPERTY PlayerAlias
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_PlayerAlias Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Sacrifice
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Sacrifice Auto
+;END ALIAS PROPERTY
+
+;BEGIN FRAGMENT Fragment_17
+Function Fragment_17()
+;BEGIN CODE
+setObjectiveCompleted(30)
+setObjectiveDisplayed(40)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_20
+Function Fragment_20()
+;BEGIN CODE
+setObjectiveDisplayed(60)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_19
+Function Fragment_19()
+;BEGIN CODE
+setObjectiveCompleted(50)
+;begin resurrection
+Actor sacrifice = Alias_Sacrifice.getReference() as Actor
+Actor PlayerRef = Alias_PlayerAlias.getReference() as Actor
+;cure lycanthropy
+PlayerRef.removeSpell(CHWW_Monitor.BeastForm)
+PlayerRef.removeSpell(CHWW_Monitor.WerewolfChangeRingOfHircine)
+PlayerRef.removeSpell(CHWW_Monitor.WerewolfImmunity)
+PlayerRef.sendLycanthropyStateChanged(false)
+if (PlayerWerewolfQuest.IsRunning() && PlayerWerewolfQuest.GetStage() < 100)
+PlayerWerewolfQuest.SetStage(100)
+endif
+;copied from soul trap
+SoulTrapPVFX01.Play(PlayerRef, 4.7, sacrifice)
+SoulTrapPVFX02.Play(sacrifice, 5.9, PlayerRef)
+SoulTrapTargetActFXS.Play(PlayerRef, 2)
+SoulTrapCastActFXS.Play(sacrifice, 3)
+
+reanimateSelf.cast(sacrifice)
+utility.wait(2.0)
+CHWW_Monitor.Transform.cast(sacrifice)
+setStage(60)
+;END CODE
+EndFunction
+;END FRAGMENT
+
 ;BEGIN FRAGMENT Fragment_15
 Function Fragment_15()
 ;BEGIN CODE
 SetObjectiveDisplayed(10)
 SetObjectiveDisplayed(20)
+(Alias_PlayerAlias as CHWW_CureQuestPlayerInventoryTracker).goToState("gathering")
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_18
+Function Fragment_18()
+;BEGIN CODE
+setObjectiveCompleted(40)
+setObjectiveDisplayed(50)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_16
+Function Fragment_16()
+;BEGIN CODE
+setObjectiveDisplayed(30)
+Alias_Sacrifice.getReference().reset()
+Alias_Sacrifice.getReference().addItem(SacrificeHeart)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_21
+Function Fragment_21()
+;BEGIN CODE
+completeAllObjectives()
+CHWW_Monitor.curedBefore = true
+stop()
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
+
+CHWW_PlayerMonitorScript Property CHWW_Monitor Auto
+MiscObject Property SacrificeHeart Auto
+Quest Property PlayerWerewolfQuest Auto
+SPELL Property reanimateSelf Auto
+EffectShader Property SoulTrapCastActFXS Auto
+VisualEffect Property SoulTrapPVFX02 Auto
+EffectShader Property SoulTrapTargetActFXS Auto
+VisualEffect Property SoulTrapPVFX01 Auto

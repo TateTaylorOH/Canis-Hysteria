@@ -1,8 +1,8 @@
 Scriptname BeastbloodDiseaseEffectScript extends ActiveMagicEffect  
 
 Float Property WerewolfChangeTimer Auto
-Float Property Hour_Moonrise = 21.0 Auto
-Float Property Hour_Moonset = 5.0 Auto
+int Property Hour_Moonrise = 21 Auto
+int Property Hour_Moonset = 5 Auto
 Actor Property PlayerRef Auto
 GlobalVariable Property Gamehour Auto
 GlobalVariable Property GameDaysPassed Auto
@@ -12,8 +12,9 @@ Message Property WerewolfMoonsetMessage Auto
 CompanionsHousekeepingScript Property CompanionsTrackingQuest Auto
 Spell Property WerewolfImmunity auto
 Spell Property WerewolfCureDisease auto
-Quest Property PlayerWerewolfCureQuest auto
 Spell Property WerewolfChange auto
+CHWW_PlayerMonitorScript Property CHWW_Monitor Auto
+Race Property WerewolfBeastRace Auto
 
 Race[] Property VampireRaces Auto
 Race[] Property NonVampireRaces Auto
@@ -30,10 +31,10 @@ Event OnEffectStart(Actor Target, Actor Caster)
 EndEvent
 
 Event OnUpdateGameTime()
-	If GameHour.GetValueInt() == 5
+	If GameHour.GetValueInt() == Hour_Moonset
 		WerewolfMoonsetMessage.Show()
 	EndIf
-	If GameHour.GetValueInt() == 19
+	If GameHour.GetValueInt() == Hour_Moonrise
 		WerewolfMoonriseMessage.Show()
 	EndIf
 	If GameDaysPassed.Value >= WerewolfChangeTimer
@@ -60,7 +61,6 @@ function transform()
 	PlayerRef.RemoveSpell(DiseaseSanguinareVampiris) ;USKP 2.0.5 - This needs to be removed as well.
     WerewolfCureDisease.Cast(PlayerRef)
     PlayerRef.AddSpell(WerewolfImmunity, false)
-	PlayerWerewolfCureQuest.Start()
 	Race origRace = PlayerRef.GetRace()
 	int index = VampireRaces.find(origRace)
 	if(index > 0)
@@ -68,7 +68,9 @@ function transform()
 	endIf
 	CompanionsTrackingQuest.PlayerOriginalRace = PlayerRef.GetRace()
 	;major diff is here, since WerewolfChange no longer bails out early unless you are in C03
+	CHWW_Monitor.WereRace = WerewolfBeastRace
 	PlayerIsWerewolf.setValue(1.0)
 	PlayerRef.AddSpell(WerewolfChange)
     WerewolfChange.Cast(PlayerRef)
+	PlayerRef.sendLycanthropyStateChanged(true)
 endFunction
