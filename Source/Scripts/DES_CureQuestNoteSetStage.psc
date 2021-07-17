@@ -4,8 +4,10 @@ Quest Property CureQuest auto
 Quest Property PointerQuest auto
 
 Event OnRead()
-	PointerQuest.SetStage(15)
-	CureQuest.SetStage(10)
+	if(PointerQuest.isRunning())
+		PointerQuest.SetStage(15)
+		CureQuest.start()
+	endIf
 EndEvent
 
 

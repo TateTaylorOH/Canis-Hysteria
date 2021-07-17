@@ -13,3 +13,7 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 		endIf
 	endIf
 endEvent
+
+Event OnLocationChange(Location akOldLoc, Location akNewLoc)
+	(getOwningQuest() as CHWW_PlayerMonitorScript).handleLocationChange(akOldLoc, akNewLoc)
+endEvent
