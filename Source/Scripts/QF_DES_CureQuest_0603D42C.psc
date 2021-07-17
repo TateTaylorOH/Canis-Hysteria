@@ -1,6 +1,16 @@
 ;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
-;NEXT FRAGMENT INDEX 21
+;NEXT FRAGMENT INDEX 22
 Scriptname QF_DES_CureQuest_0603D42C Extends Quest Hidden
+
+;BEGIN ALIAS PROPERTY BloodBasin
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_BloodBasin Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY Sacrifice
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Sacrifice Auto
+;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY Cauldron
 ;ALIAS PROPERTY TYPE ReferenceAlias
@@ -11,28 +21,6 @@ ReferenceAlias Property Alias_Cauldron Auto
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_PlayerAlias Auto
 ;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY Sacrifice
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Sacrifice Auto
-;END ALIAS PROPERTY
-
-;BEGIN FRAGMENT Fragment_17
-Function Fragment_17()
-;BEGIN CODE
-setObjectiveCompleted(30)
-setObjectiveDisplayed(40)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_20
-Function Fragment_20()
-;BEGIN CODE
-setObjectiveDisplayed(60)
-;END CODE
-EndFunction
-;END FRAGMENT
 
 ;BEGIN FRAGMENT Fragment_19
 Function Fragment_19()
@@ -63,6 +51,15 @@ setStage(60)
 EndFunction
 ;END FRAGMENT
 
+;BEGIN FRAGMENT Fragment_18
+Function Fragment_18()
+;BEGIN CODE
+setObjectiveCompleted(40)
+setObjectiveDisplayed(50)
+;END CODE
+EndFunction
+;END FRAGMENT
+
 ;BEGIN FRAGMENT Fragment_15
 Function Fragment_15()
 ;BEGIN CODE
@@ -73,11 +70,10 @@ SetObjectiveDisplayed(20)
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_18
-Function Fragment_18()
+;BEGIN FRAGMENT Fragment_20
+Function Fragment_20()
 ;BEGIN CODE
-setObjectiveCompleted(40)
-setObjectiveDisplayed(50)
+setObjectiveDisplayed(60)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -95,9 +91,17 @@ EndFunction
 ;BEGIN FRAGMENT Fragment_21
 Function Fragment_21()
 ;BEGIN CODE
-completeAllObjectives()
-CHWW_Monitor.curedBefore = true
-stop()
+FailAllObjectives()
+Stop()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_17
+Function Fragment_17()
+;BEGIN CODE
+setObjectiveCompleted(30)
+setObjectiveDisplayed(40)
 ;END CODE
 EndFunction
 ;END FRAGMENT

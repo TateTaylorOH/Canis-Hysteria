@@ -7,4 +7,4 @@ When I first played Skyrim I was very excited about the return of lycanthropy, b
 
 -   A new disease, Canis Hysteria, that will morph into full-blown lycanthropy if not treated.
 -   An alternative way to cure your beast blood (this will only work on non-Companion werewolves).
--   New dialogue for the Companions questline that highlights your lycanthrope status.
+-   New dialogue for the Companions questline to highlight your lycanthrope status.
