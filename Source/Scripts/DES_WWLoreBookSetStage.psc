@@ -7,7 +7,7 @@ Faction Property Companions auto
 
 Event OnRead()
 	IF PlayerRef.HasSpell(Werewolf)
-		IF PlayerRef.IsInFaction(Companions) == 0
+		IF !PlayerRef.IsInFaction(Companions)
 			PointerQuest.SetStage(10)
 		ENDIF
 	ENDIF
