@@ -7,9 +7,9 @@ Scriptname QF_DES_CurePointerQuest_0604764E Extends Quest Hidden
 ReferenceAlias Property Alias_Fallaise Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY Isobel
+;BEGIN ALIAS PROPERTY Ettiene
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Isobel Auto
+ReferenceAlias Property Alias_Ettiene Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY AltarofThrond
@@ -17,10 +17,25 @@ ReferenceAlias Property Alias_Isobel Auto
 ReferenceAlias Property Alias_AltarofThrond Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY Ettiene
+;BEGIN ALIAS PROPERTY Isobel
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Ettiene Auto
+ReferenceAlias Property Alias_Isobel Auto
 ;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY PlayerRef
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_PlayerRef Auto
+;END ALIAS PROPERTY
+
+;BEGIN FRAGMENT Fragment_0
+Function Fragment_0()
+;BEGIN CODE
+SetObjectiveDisplayed(10)
+AltarMarker.AddToMap()
+CureNote.Enable()
+;END CODE
+EndFunction
+;END FRAGMENT
 
 ;BEGIN FRAGMENT Fragment_2
 Function Fragment_2()
@@ -31,15 +46,8 @@ Stop()
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_0
-Function Fragment_0()
-;BEGIN CODE
-SetObjectiveDisplayed(10)
-AltarMarker.AddToMap()
-;END CODE
-EndFunction
-;END FRAGMENT
-
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
 ObjectReference Property AltarMarker  Auto  
+
+ObjectReference Property CureNote  Auto  

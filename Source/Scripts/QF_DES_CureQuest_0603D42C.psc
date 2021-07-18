@@ -1,16 +1,6 @@
 ;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
-;NEXT FRAGMENT INDEX 22
+;NEXT FRAGMENT INDEX 23
 Scriptname QF_DES_CureQuest_0603D42C Extends Quest Hidden
-
-;BEGIN ALIAS PROPERTY BloodBasin
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_BloodBasin Auto
-;END ALIAS PROPERTY
-
-;BEGIN ALIAS PROPERTY Sacrifice
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Sacrifice Auto
-;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY Cauldron
 ;ALIAS PROPERTY TYPE ReferenceAlias
@@ -22,6 +12,25 @@ ReferenceAlias Property Alias_Cauldron Auto
 ReferenceAlias Property Alias_PlayerAlias Auto
 ;END ALIAS PROPERTY
 
+;BEGIN ALIAS PROPERTY Sacrifice
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Sacrifice Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY BloodBasin
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_BloodBasin Auto
+;END ALIAS PROPERTY
+
+;BEGIN FRAGMENT Fragment_22
+Function Fragment_22()
+;BEGIN CODE
+FailAllObjectives()
+Stop()
+;END CODE
+EndFunction
+;END FRAGMENT
+
 ;BEGIN FRAGMENT Fragment_19
 Function Fragment_19()
 ;BEGIN CODE
@@ -32,7 +41,6 @@ Actor PlayerRef = Alias_PlayerAlias.getReference() as Actor
 ;cure lycanthropy
 PlayerRef.removeSpell(CHWW_Monitor.BeastForm)
 PlayerRef.removeSpell(CHWW_Monitor.WerewolfChangeRingOfHircine)
-PlayerRef.removeSpell(CHWW_Monitor.WerewolfImmunity)
 PlayerRef.sendLycanthropyStateChanged(false)
 if (PlayerWerewolfQuest.IsRunning() && PlayerWerewolfQuest.GetStage() < 100)
 PlayerWerewolfQuest.SetStage(100)
@@ -44,18 +52,30 @@ SoulTrapTargetActFXS.Play(PlayerRef, 2)
 SoulTrapCastActFXS.Play(sacrifice, 3)
 
 reanimateSelf.cast(sacrifice)
-utility.wait(2.0)
+utility.wait(6.0)
 CHWW_Monitor.Transform.cast(sacrifice)
 setStage(60)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_18
-Function Fragment_18()
+;BEGIN FRAGMENT Fragment_16
+Function Fragment_16()
 ;BEGIN CODE
-setObjectiveCompleted(40)
-setObjectiveDisplayed(50)
+setObjectiveDisplayed(30)
+Alias_Sacrifice.getReference().reset()
+Alias_Sacrifice.getReference().addItem(SacrificeHeart)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_21
+Function Fragment_21()
+;BEGIN CODE
+Actor PlayerRef = Alias_PlayerAlias.getReference() as Actor
+PlayerRef.removeSpell(CHWW_Monitor.WerewolfImmunity)
+CompleteAllObjectives()
+Stop()
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -78,30 +98,20 @@ setObjectiveDisplayed(60)
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_16
-Function Fragment_16()
-;BEGIN CODE
-setObjectiveDisplayed(30)
-Alias_Sacrifice.getReference().reset()
-Alias_Sacrifice.getReference().addItem(SacrificeHeart)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_21
-Function Fragment_21()
-;BEGIN CODE
-FailAllObjectives()
-Stop()
-;END CODE
-EndFunction
-;END FRAGMENT
-
 ;BEGIN FRAGMENT Fragment_17
 Function Fragment_17()
 ;BEGIN CODE
 setObjectiveCompleted(30)
 setObjectiveDisplayed(40)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_18
+Function Fragment_18()
+;BEGIN CODE
+setObjectiveCompleted(40)
+setObjectiveDisplayed(50)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -116,3 +126,4 @@ EffectShader Property SoulTrapCastActFXS Auto
 VisualEffect Property SoulTrapPVFX02 Auto
 EffectShader Property SoulTrapTargetActFXS Auto
 VisualEffect Property SoulTrapPVFX01 Auto
+
