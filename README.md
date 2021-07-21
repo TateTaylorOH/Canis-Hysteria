@@ -8,3 +8,8 @@ When I first played Skyrim I was very excited about the return of lycanthropy, b
 -   A new disease, Canis Hysteria, that will morph into full-blown lycanthropy if not treated.
 -   An alternative way to cure your beast blood (this will only work on non-Companion werewolves).
 -   New dialogue for the Companions questline that highlights your lycanthrope status.
+
+![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Compatibility.png)\
+[Improved Companions - Questline Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/22300) is fully compatible without need of a patch.
+
+Canis Hysteria should be fully compatible with werewolf overhauls such as [Manbeast](https://www.nexusmods.com/skyrimspecialedition/mods/44746) and [Growl](https://www.nexusmods.com/skyrimspecialedition/mods/31245).
