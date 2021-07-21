@@ -9,6 +9,10 @@ When I first played Skyrim I was very excited about the return of lycanthropy, b
 -   An alternative way to cure your beast blood (this will only work on non-Companion werewolves).
 -   New dialogue for the Companions questline that highlights your lycanthrope status.
 
+**Recommended Mods**
+
+In vanilla werewolves are *incredibly* rare enemies. You will probably be able to count the number of werewolves you fight in a playthrough on one hand. Therefore it is recommended that you pair this mod with [More Werewolves](https://www.nexusmods.com/skyrimspecialedition/mods/7259) by [opusGlass](https://www.nexusmods.com/skyrimspecialedition/users/6123863) and [Forsworn Skinchangers](https://www.nexusmods.com/skyrimspecialedition/mods/34900) by [EpicCab](https://www.nexusmods.com/skyrimspecialedition/users/4117328). Werewolves will still be uncommon, but you will be able to encounter enough to make contracting Canis Hysteria viable.
+
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Compatibility.png)\
 [Improved Companions - Questline Tweaks](https://www.nexusmods.com/skyrimspecialedition/mods/22300) is fully compatible without need of a patch.
 
