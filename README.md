@@ -11,7 +11,7 @@ When I first played Skyrim I was very excited about the return of lycanthropy, b
 
 **Curing the Affliction**
 
-A short quest has been added to allow you to cure your non-Companion lycanthropy. You can start the quest by reading the book *Taxonomy of Lycanthrope Diseases*. You can find a copy in Kodlak's room in Jorrvaskr.
+A short quest has been added to allow you to cure your non-Companion lycanthropy. You can start the quest by reading the book *Taxonomy of Lycanthrope Diseases*. You can find a copy in Kodlak's room in Jorrvaskr as well as randomly throughout the world.
 
 ![](https://raw.githubusercontent.com/TateTaylorUSA/TateTaylorUSA/master/assets/images/canis%20hysteria/WWLoreBook.png)
 
