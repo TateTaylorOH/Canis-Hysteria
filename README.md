@@ -6,14 +6,15 @@ When I first played Skyrim I was very excited about the return of lycanthropy, b
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Features.png)
 
 -   A new disease, Canis Hysteria, that will morph into full-blown lycanthropy if not treated.
+-   A [new lore book](https://www.nexusmods.com/skyrimspecialedition/articles/3213)﻿ that expands on some of the lore of the mod.
 -   An alternative way to cure your beast blood (this will only work on non-Companion werewolves).
--   New dialogue for the Companions questline that highlights your lycanthrope status.
+-   New fully-voiced dialogue for the Companions questline that highlights your lycanthrope status.
 
 **Curing the Affliction**
 
-A short quest has been added to allow you to cure your non-Companion lycanthropy. You can start the quest by reading the book *Taxonomy of Lycanthrope Diseases*. You can find a copy in Kodlak's room in Jorrvaskr as well as randomly throughout the world.
+A short quest has been added to allow you to cure your non-Companion lycanthropy. You can start the quest by reading the book [*Taxonomy of Lycanthrope Diseases*](https://www.nexusmods.com/skyrimspecialedition/articles/3213). You can find a copy in Kodlak's room in Jorrvaskr as well as randomly throughout the world.
 
-![](https://raw.githubusercontent.com/TateTaylorUSA/TateTaylorUSA/master/assets/images/canis%20hysteria/WWLoreBook.png)
+[![](https://raw.githubusercontent.com/TateTaylorUSA/TateTaylorUSA/master/assets/images/canis%20hysteria/WWLoreBook.png)](https://www.nexusmods.com/skyrimspecialedition/articles/3213)
 
 **Recommended Mods**
 
