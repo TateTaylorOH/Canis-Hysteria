@@ -7,7 +7,7 @@ Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 if PlayerRef.HasSpell(Werewolf)
-       HasHysteria.SetValue(1)
+       DES_IKnowWhatWerewolvesAre.SetValue(1)
 endif
 ;END CODE
 EndFunction
@@ -15,6 +15,6 @@ EndFunction
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
-GlobalVariable Property HasHysteria  Auto
+GlobalVariable Property DES_IKnowWhatWerewolvesAre Auto
 Actor Property PlayerRef Auto
 Spell Property Werewolf Auto  

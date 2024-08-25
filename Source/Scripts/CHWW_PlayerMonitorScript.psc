@@ -4,6 +4,7 @@ bool property curedBefore auto
 Quest Property DES_CureQuest Auto
 Location Property AltarOfThrond Auto
 CompanionsHousekeepingScript Property C00 Auto
+Actor Property Sacrifice auto
 
 Actor Property PlayerRef Auto
 
@@ -33,8 +34,7 @@ Spell Property Transform
 endProperty
 
 function handleLocationChange(Location oldLoc, Location newLoc)
-	if(newLoc.isSameLocation(AltarOfThrond) && PlayerRef.hasSpell(BeastForm) &&\
-		!C00.PlayerHasBeastBlood && !DES_CureQuest.isRunning() && curedBefore);if you're a werewolf at the altar of thrond, not through companions, and have done this before
+	if(newLoc.isSameLocation(AltarOfThrond) && PlayerRef.hasSpell(BeastForm) && !C00.PlayerHasBeastBlood && !DES_CureQuest.isRunning() && curedBefore);if you're a werewolf at the altar of thrond, not through companions, and have done this before
 		DES_CureQuest.start(); just start the cure quest without extra theatrics
 	endIf
 endFunction
