@@ -2,6 +2,11 @@
 ;NEXT FRAGMENT INDEX 24
 Scriptname QF_DES_CureQuest_0603D42C Extends Quest Hidden
 
+;BEGIN ALIAS PROPERTY Sacrifice
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Sacrifice Auto
+;END ALIAS PROPERTY
+
 ;BEGIN ALIAS PROPERTY PlayerAlias
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_PlayerAlias Auto
@@ -12,83 +17,11 @@ ReferenceAlias Property Alias_PlayerAlias Auto
 ReferenceAlias Property Alias_Cauldron Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY Sacrifice
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Sacrifice Auto
-;END ALIAS PROPERTY
-
-;BEGIN FRAGMENT Fragment_20
-Function Fragment_20()
-;BEGIN CODE
-setObjectiveDisplayed(60)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_15
-Function Fragment_15()
-;BEGIN CODE
-SetObjectiveDisplayed(10)
-SetObjectiveDisplayed(20)
-(Alias_PlayerAlias as CHWW_CureQuestPlayerInventoryTracker).goToState("gathering")
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_18
-Function Fragment_18()
-;BEGIN CODE
-setObjectiveCompleted(40)
-setObjectiveDisplayed(50)
-HeartReturn = true
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_21
-Function Fragment_21()
-;BEGIN CODE
-Actor PlayerRef = Alias_PlayerAlias.getReference() as Actor
-PlayerRef.removeSpell(CHWW_Monitor.WerewolfImmunity)
-CompleteAllObjectives()
-IF !CHWW_Monitor.curedBefore
-   CHWW_Monitor.curedBefore = true
-ENDIF
-Stop()
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_17
-Function Fragment_17()
-;BEGIN CODE
-setObjectiveCompleted(30)
-setObjectiveDisplayed(40)
-;END CODE
-EndFunction
-;END FRAGMENT
-
 ;BEGIN FRAGMENT Fragment_22
 Function Fragment_22()
 ;BEGIN CODE
 FailAllObjectives()
 Stop()
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_16
-Function Fragment_16()
-;BEGIN CODE
-setObjectiveDisplayed(30)
-Alias_Sacrifice.getActorReference().reset()
-Alias_Sacrifice.getActorReference().addItem(SacrificeHeart)
-;IF Alias_Sacrifice.getActorReference().GetRace() == WerewolfRace
-;   Alias_Sacrifice.getActorReference().Resurrect()
-;   Alias_Sacrifice.getActorReference().SetRace()
-;   Utility.Wait(1)
-;   Alias_Sacrifice.getActorReference().Kill()
-;ENDIF
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -127,7 +60,78 @@ reanimateSelf.cast(sacrifice)
 utility.wait(6.0)
 CHWW_Monitor.Transform.cast(sacrifice)
 SacAttack = true
+DES_CureQuest_NameChange.Start()
 setStage(60)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_15
+Function Fragment_15()
+;BEGIN CODE
+SetObjectiveDisplayed(10)
+SetObjectiveDisplayed(20)
+(Alias_PlayerAlias as CHWW_CureQuestPlayerInventoryTracker).goToState("gathering")
+IF !OGSac.IsInInterior()
+   OGSac.MoveTo(NuSac)
+ENDIF
+NuSac.Reset()
+Alias_Sacrifice.ForceRefTo(NuSac)
+Alias_Sacrifice.getActorReference().setrace(BretonRace)
+Alias_Sacrifice.getActorReference().EquipItem(MS11WoundArivanya, true)
+Alias_Sacrifice.getActorReference().Kill()
+Alias_Sacrifice.getActorReference().MoveTo(SacMarker)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_21
+Function Fragment_21()
+;BEGIN CODE
+Actor PlayerRef = Alias_PlayerAlias.getReference() as Actor
+PlayerRef.removeSpell(CHWW_Monitor.WerewolfImmunity)
+DES_CureQuest_NameChange.Stop()
+CompleteAllObjectives()
+IF !CHWW_Monitor.curedBefore
+   CHWW_Monitor.curedBefore = true
+ENDIF
+Stop()
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_17
+Function Fragment_17()
+;BEGIN CODE
+setObjectiveCompleted(30)
+setObjectiveDisplayed(40)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_16
+Function Fragment_16()
+;BEGIN CODE
+setObjectiveDisplayed(30)
+Alias_Sacrifice.getActorReference().addItem(SacrificeHeart)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_20
+Function Fragment_20()
+;BEGIN CODE
+setObjectiveDisplayed(60)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_18
+Function Fragment_18()
+;BEGIN CODE
+setObjectiveCompleted(40)
+setObjectiveDisplayed(50)
+HeartReturn = true
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -145,3 +149,12 @@ VisualEffect Property SoulTrapPVFX01 Auto
 Race Property WerewolfRace  Auto  
 bool property SacAttack auto conditional
 bool property HeartReturn auto conditional
+Actor Property OGSac  Auto  
+ObjectReference Property SacMarker  Auto  
+Armor Property MS11WoundArivanya  Auto  
+
+Actor Property NuSac  Auto  
+
+Race Property BretonRace  Auto  
+
+Quest Property DES_CureQuest_NameChange  Auto  

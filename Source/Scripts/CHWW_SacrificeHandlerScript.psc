@@ -13,8 +13,8 @@ Event OnItemAdded(Form akBaseItem, int aiItemCount, ObjectReference akItemRefere
 endEvent
 
 Event OnDying(Actor akKiller)
-	;if (getOwningQuest() as QF_DES_CureQuest_0603D42C).SacAttack
+	if (getOwningQuest() as QF_DES_CureQuest_0603D42C).SacAttack
 		getOwningQuest().setStage(70)
-	;	(getOwningQuest() as QF_DES_CureQuest_0603D42C).SacAttack = false
-	;endIf
+		(getOwningQuest() as QF_DES_CureQuest_0603D42C).SacAttack = false
+	endIf
 endEvent
