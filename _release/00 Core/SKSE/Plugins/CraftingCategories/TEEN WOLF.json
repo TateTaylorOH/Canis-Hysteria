@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Exit-9B/CraftingCategories/main/docs/CraftingCategories.schema.json",
+  "sections": {
+    "$WOLFGIVER": {
+      "priority": 0,
+      "keywords": [ "DES_WolfGiverIngredients" ],
+      "icon": {
+        "source": "skyui/icons_category_straight.swf",
+        "label": "cat_favorites"
+      }
+    }
+  }
+}

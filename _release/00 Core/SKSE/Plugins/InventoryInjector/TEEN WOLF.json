@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+  "rules": [
+    {
+      "match": {
+        "formType": "MiscItem",
+        "formId": {
+          "anyOf": [
+            "TEEN WOLF.esp|4764C",
+            "TEEN WOLF.esp|4764D"
+          ]
+        }
+      },
+      "assign": {
+        "subType": "Remains"
+      }
+    }
+  ]
+}
